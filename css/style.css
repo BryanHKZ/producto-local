@@ -1,0 +1,361 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Raleway", sans-serif;
+}
+
+.contenedor {
+  max-width: 1200px;
+  overflow: hidden;
+  margin: auto;
+  padding: 60px 0;
+}
+
+.titulo {
+  font-size: 60px;
+  margin-bottom: 15px;
+}
+
+.subtitulo {
+  text-align: center;
+  font-weight: 300;
+  color: #fc7045;
+  margin-bottom: 40px;
+  font-size: 40px;
+}
+
+header {
+  height: 100vh;
+  background: rgb(131, 58, 180);
+  animation: transicion 15s infinite ease-in-out;
+}
+@keyframes transicion {
+  0% {
+    background: linear-gradient(
+        90deg,
+        #833ab480 0%,
+        #fd1d1d80 50%,
+        #fcb04580 100%
+      ),
+      url(../media/fondo.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+  }
+  33% {
+    background: linear-gradient(
+        90deg,
+        #833ab480 0%,
+        #fd1d1d80 50%,
+        #fcb04580 100%
+      ),
+      url(../media/fondo.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+  }
+  34% {
+    background: linear-gradient(
+        90deg,
+        #833ab480 0%,
+        #fd1d1d80 50%,
+        #fcb04580 100%
+      ),
+      url(../media/fondo2.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+  }
+
+  66% {
+    background: linear-gradient(
+        90deg,
+        #833ab480 0%,
+        #fd1d1d80 50%,
+        #fcb04580 100%
+      ),
+      url(../media/fondo2.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+  }
+  67% {
+    background: linear-gradient(
+        90deg,
+        #833ab480 0%,
+        #fd1d1d80 50%,
+        #fcb04580 100%
+      ),
+      url(../media/fondo3.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+  }
+  100% {
+    background: linear-gradient(
+        90deg,
+        #833ab480 0%,
+        #fd1d1d80 50%,
+        #fcb04580 100%
+      ),
+      url(../media/fondo3.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+  }
+}
+
+.head {
+  text-align: center;
+  padding: 0;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: aliceblue;
+}
+
+.menu-button {
+  position: fixed;
+  z-index: 10;
+  top: 30px;
+  right: 30px;
+  background: white;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  border-radius: 10px;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.5);
+}
+
+.menu-navegacion {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 15vh;
+  background-image: linear-gradient(120deg, #fda085 0%, #f6d365 100%);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  transition: transform 0.3s ease-in-out;
+  transform: translateY(-110%);
+}
+
+.spread {
+  transform: translate(0);
+}
+
+.menu-navegacion a {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+}
+
+.phrase {
+  font-weight: 300;
+  font-size: 25px;
+}
+
+/* Debes Conocer */
+
+.contenedor-conocer {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.contenedor-conocer img {
+  width: 40%;
+}
+
+.imagen-conocer {
+  width: 45%;
+}
+
+.texto {
+  margin-bottom: 20px;
+}
+
+.to-do {
+  margin-bottom: 7px;
+  color: #fda085;
+}
+
+/* Galería */
+
+.galeria {
+  background: #f6f6f6;
+}
+
+.contenedor-galeria {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.img-galeria {
+  width: 30%;
+  height: 500px;
+  display: block;
+  margin-bottom: 25px;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+  object-fit: cover;
+  transition: all 200ms ease-in-out;
+}
+
+.img-galeria:hover {
+  /* transform: translateY(-2%); */
+  transform: scale(1.05, 1.05);
+}
+
+.agregar-imagen {
+  object-fit: cover;
+  width: 60%;
+  border-radius: 10px;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.5);
+  transform: scale(0);
+  transition: transform 0.3s 0.2s;
+}
+
+/* opiniones */
+
+.opiniones {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+.cont-opiniones {
+  width: 30%;
+  text-align: center;
+  margin-bottom: 20px;
+  margin-right: 20px;
+}
+
+.cont-opiniones img {
+  width: 80%;
+  display: block;
+  margin: auto;
+}
+
+.n-opiniones {
+  display: inline-block;
+  margin-top: 20px;
+  width: 100%;
+  font-weight: 400;
+}
+
+.citado {
+  color: #fda085;
+  font-size: 1rem;
+  font-weight: 700;
+  padding-top: 10px;
+  justify-content: center;
+}
+
+/* Footer */
+
+footer {
+  background: rgb(16, 19, 28);
+  background: linear-gradient(
+    117deg,
+    #ff6e46 0%,
+    #fda085 100%
+  );
+  padding-bottom: 0.1rem;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding-top: 60px;
+  padding-bottom: 40px;
+}
+
+.contact-us {
+  width: 40%;
+  color: white;
+}
+
+.brand {
+  font-weight: 500;
+  font-size: 40px;
+}
+
+.brand + p {
+  font-weight: 500;
+}
+
+.social-media {
+  width: 50%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.social-media-icon {
+  display: inline-block;
+  margin-left: 20px;
+  width: 60px;
+  height: 60px;
+  border: 1px solid white;
+  border-radius: 50%;
+  text-align: center;
+  color: white;
+}
+.instagram:hover {
+  background: linear-gradient(217deg, #833ab4, #833ab400 70.71%),
+    linear-gradient(127deg, #fd1d1d, #833ab400 70.71%),
+    linear-gradient(336deg, #fcb045, #833ab400 70.71%);
+  color: white;
+}
+
+.facebook:hover {
+  background: white;
+  color: rgb(42, 99, 255);
+}
+
+.whatsapp:hover {
+  background: white;
+  color: rgb(0, 194, 48);
+}
+
+.twitter:hover {
+  background: white;
+  color: rgb(42, 188, 255);
+}
+
+.social-media-icon i {
+  font-size: 30px;
+  line-height: 60px;
+}
+
+.line {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  height: 3px;
+  background: white;
+  margin-bottom: 60px;
+}
